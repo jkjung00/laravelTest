@@ -13,3 +13,7 @@ Route::get('/user/{name?}', function ($name = null) {
 });
 
 Route::get('/home/{name?}', [HomeController::class, 'index'])->name('home.index');
+
+Route::get('test1', function () {
+  return view('test');
+});
